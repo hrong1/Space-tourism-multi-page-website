@@ -1,0 +1,79 @@
+/* Reset and Setup from scrimba's free course: https://scrimba.com/build-a-space-travel-website-c014 */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    /* colors */
+    --clr-dark: #{$clr-dark-hsl};
+    --clr-light: #{$clr-light-hsl};
+    --clr-white: #{$clr-white-hsl};
+    
+    /* font-sizes */
+    --fs-900: $fs-900-mobile;
+    --fs-800: $fs-800-mobile;
+    --fs-700: $fs-700-mobile;
+    --fs-600: $fs-600-mobile;
+    --fs-500: $fs-500-mobile;
+    --fs-400: $fs-400-mobile;
+    --fs-300: $fs-300-mobile;
+    --fs-200: $fs-200-mobile;
+    
+    /* font-families */
+    --ff-serif: $ff-serif;
+    --ff-sans-cond: $ff-sans-cond;
+    --ff-sans-normal: $ff-sans-normal;
+}
+
+@media (min-width: 35em) {
+    :root {
+        --fs-800: $fs-800-tablet;
+        --fs-700: $fs-700-tablet;
+        --fs-600: $fs-600-tablet;
+        --fs-500: $fs-500-tablet;
+        --fs-400: $fs-400-tablet;
+    }
+}
+
+@media (min-width: 45em) {
+    :root {
+        --fs-800: $fs-800-desktop;
+        --fs-700: $fs-700-desktop;
+        --fs-600: $fs-600-desktop;
+        --fs-500: $fs-500-desktop;
+        --fs-400: $fs-400-desktop;
+    }
+}
+

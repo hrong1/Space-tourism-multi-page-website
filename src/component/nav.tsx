@@ -49,7 +49,7 @@ const NavMenu = () => {
                     onClick={handleToggle}
                     aria-controls='navigation'
                 >
-                    {isOpen ? <Close className='navMenu__toggle-icon'/> : <Open className='navMenu__toggle-icon'/>}
+                    {isOpen ? <Close className='navMenu__list--icon'/> : <Open className='navMenu__list--icon'/>}
                 </button>
             </div>
         </nav>
